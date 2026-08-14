@@ -109,3 +109,7 @@ upskill/*.md
 
 # Local GitHub CLI
 gh_2.97.0_macOS_arm64*
+
+# Local TinyTeX
+install-bin-unix.sh
+tinytex/

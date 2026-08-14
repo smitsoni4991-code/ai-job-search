@@ -106,3 +106,6 @@ upskill/*.md
 
 # Brainstorm mockups (superpowers visual companion) - never ship
 .superpowers/
+
+# Local GitHub CLI
+gh_2.97.0_macOS_arm64*

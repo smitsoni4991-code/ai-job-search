@@ -1,8 +1,7 @@
-%% Example CV - [YOUR_NAME]
+%% Example CV - Smit Soni
 %% Comprehensive overview of all competencies, experience, and achievements.
 %% Use as a master reference when tailoring role-specific CVs.
 %%
-%% SETUP: Run /setup to populate this with your actual information.
 %% Compile with: lualatex main_example.tex
 %% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
 
@@ -19,23 +18,24 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage{hyperref}
+\usepackage{needspace}
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Smit Soni - CV},
     pdfpagemode=FullScreen,
 }
 \usepackage[scale=0.80]{geometry}
 \usepackage{import}
 
 % personal data
-\name{[First]}{[Last]}
-\address{[Your Address, City, Country]}{}{}
-\phone[mobile]{[+XX XXXXXXXXXX]}
-\email{[your.email@example.com]}
-\extrainfo{\href{[https://linkedin.com/in/your-profile]}{LinkedIn}, \href{[https://github.com/your-username]}{GitHub}}
+\name{Smit}{Soni}
+\address{Saint Peters, MO 63303}{}{}
+\phone[mobile]{(862) 500-1497}
+\email{smitsoni4991@gmail.com}
+\extrainfo{\href{https://linkedin.com/in/smitsoni1}{LinkedIn} \textbullet{} \href{https://github.com/smitsoni4991-code}{GitHub} \textbullet{} \href{https://smits-portfolio-lilac.vercel.app}{Portfolio}}
 
 \begin{document}
 
@@ -45,8 +45,10 @@
 %     PROFILE STATEMENT
 % ============================================================
 
-\vspace{6pt}
-\small{[Write a 3-5 line profile statement tailored to the role you're applying for. Focus on what makes you uniquely qualified. Example: "Data scientist with a PhD in [field] and X years of industry experience. Combines deep domain expertise in [domain] with strong applied machine learning and Python development skills. Experienced in developing end-to-end ML pipelines, from data ingestion to stakeholder-facing dashboards."]}
+\vspace{-10pt}
+\small{Quality Engineering Manager with 7+ years of experience leading end-to-end quality execution, build readiness, and release quality across large-scale software platforms serving millions of users. Proven track record of growing quality engineering teams, reducing production defect leakage by 35\%, and cutting manual regression by 60\% through test automation and AI-powered tooling. Strong intuition for assessing bug severity and user experience impact — driving critical issues to resolution with urgency and accountability across cross-functional engineering teams. Skilled in Python scripting for test automation, data analysis, and tooling, with deep experience across the full software development lifecycle and all release phases.}
+
+\vspace{5pt}
 
 % ============================================================
 %     CORE COMPETENCIES
@@ -55,18 +57,14 @@
 \section{Core Competencies}
 \vspace{1pt}
 \begin{itemize}
-
-\item \textbf{[Skill Category 1]}: [Specific skills, frameworks, tools. Be concrete.]
-
-\item \textbf{[Skill Category 2]}: [Specific skills, frameworks, tools.]
-
-\item \textbf{[Skill Category 3]}: [Specific skills, frameworks, tools.]
-
-\item \textbf{[Skill Category 4]}: [Domain expertise, methods, approaches.]
-
-\item \textbf{[Skill Category 5]}: [Tools, platforms, software.]
-
+\item \textbf{Quality Engineering \& Automation}: XCTest, Xcode, Playwright, JMeter, TestRail, Jira, Postman, RestAssured, Cucumber, Performance Testing
+\item \textbf{Scripting \& Data Analysis}: Python, Swift, SQL, PostgreSQL, AWS, Tableau, Pandas, Data Integrity Validation
+\item \textbf{AI \& Intelligent Tooling}: AI-Powered Testing Tools, Intelligent Bug Classification \& Triage, AI-Driven Workflow Optimization, Automated Test Generation, Quality Analytics
+\item \textbf{Build \& Release Engineering}: CI/CD Pipeline Integration, GitHub Actions, Jenkins, Docker, Git, Build Readiness Assessment, Go/No-Go Decisions
+\item \textbf{Leadership \& Quality Culture}: Team Growth \& Development, Agile/Scrum, Bug Triage \& Severity Assessment, Risk Assessment, Continuous Process Improvement
 \end{itemize}
+
+\vspace{5pt}
 
 % ============================================================
 %     PROFESSIONAL EXPERIENCE
@@ -76,35 +74,40 @@
 \vspace{3pt}
 \begin{itemize}
 
-% --- Most Recent Role ---
-\item{\cventry{[YYYY-Present]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+% --- Spectrum ---
+\item{\cventry{Jul 2021 - Present}{Sr. Quality Assurance Analyst / QA Program Lead}{Spectrum (Charter Communications)}{St. Louis, MO}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1 - be specific, use numbers where possible]
-    \item [Achievement or responsibility 2]
-    \item [Achievement or responsibility 3]
-    \item [Achievement or responsibility 4]
+    \item Leveraged AI technologies to build intelligent testing tools that auto-classify and triage bugs by severity and user experience impact, auto-generate test plans from requirements, and perform gap analysis on test coverage. (Impact: 40\% Faster Test Creation \& Execution)
+    \item Led holistic evaluation of software builds across web and iOS client platforms, developing a sharp understanding of which types of bugs most severely impact customer experience, and driving critical issues to resolution. (Impact: 35\% Bug Escape Reduction)
+    \item Built automated regression suites and data validation frameworks using Playwright, Xcode/XCTest, and Python, developing risk assessments to prevent critical bugs from reaching production. (Impact: 60\% Manual Testing Effort Reduced)
+    \item Grown, led, and mentored a team of quality engineers focused on build quality and release readiness, establishing test automation standards, and promoting a culture of continuous improvement.
+    \item Delivered concise quality insights and metrics that informed executive decisions on build readiness, release timing, and Go/No-Go decisions across concurrent product releases.
 \end{itemize}}}
 
-\vspace{3pt}
+\vspace{5pt}
 
-% --- Previous Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+% --- State of Oregon ---
+\needspace{5\baselineskip}
+\item{\cventry{Oct 2020 - Jun 2021}{QA Analyst / User Acceptance Test Lead}{State of Oregon}{Oregon}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1]
-    \item [Achievement or responsibility 2]
-    \item [Achievement or responsibility 3]
+    \item Led UAT, functional, integration, and regression testing for complex system integrations, assessing bug severity and user experience impact to resolve critical issues and catching 35+ critical bugs prior to go-live.
+    \item Served as the primary QA coordination point between internal teams, the Oregon Health Authority, and external implementation partners to align deliverables, track dependencies, and manage risks across all release phases.
+    \item Engineered SQL validation strategies for healthcare claims workflows ensuring 100\% compliance, and developed UAT training programs and onboarding guides. (Impact: 20\% Stakeholder Satisfaction Improvement)
 \end{itemize}}}
 
-\vspace{3pt}
+\vspace{5pt}
 
-% --- Earlier Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+% --- Publix ---
+\needspace{5\baselineskip}
+\item{\cventry{Sep 2019 - Sep 2020}{SQA Analyst}{Publix Super Markets}{Florida}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1]
-    \item [Achievement or responsibility 2]
+    \item Executed end-to-end functional, integration, and regression test plans for SaaS implementations and system integrations, assessing user experience impact and validating build stability.
+    \item Drove adoption of test automation frameworks (Playwright, RestAssured), scripting in Python to streamline testing cycles by 15\% and improve usability metrics by 25\%.
 \end{itemize}}}
 
 \end{itemize}
+
+\vspace{5pt}
 
 % ============================================================
 %     EDUCATION
@@ -114,17 +117,19 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-Thesis: ``[Thesis Title].'' [Brief description of research focus.]
+\item{\cventry{2020-2022}{M.S. in Project Management}{University of the Cumberlands}{Williamsburg, KY}{}{\vspace{1pt}
+Focused on Agile methodologies, risk management, quality control, and cross-functional team leadership.
 }}
 
 \vspace{3pt}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-[Brief description or key topics.]
+\item{\cventry{2018-2020}{M.S. in Information Technology}{University of the Cumberlands}{Williamsburg, KY}{}{\vspace{1pt}
+Focused on software engineering, database design (SQL), software development lifecycle, and networking systems.
 }}
 
 \end{itemize}
+
+\vspace{5pt}
 
 % ============================================================
 %     LANGUAGES
@@ -133,28 +138,24 @@ Thesis: ``[Thesis Title].'' [Brief description of research focus.]
 \section{Languages}
 \vspace{1pt}
 \begin{itemize}
-\item [Language 1] (native), [Language 2] (fluent), [Language 3] (intermediate).
+\item \textbf{English} (Professional working proficiency)
 \end{itemize}
 
+\vspace{5pt}
+
 % ============================================================
-%     PUBLICATIONS (optional)
+%     CERTIFICATIONS
 % ============================================================
 
-\section{Publications}
+\section{Certifications}
 \vspace{1pt}
 \begin{itemize}
-\item [Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}
+\item \textbf{ISTQB Test Automation Engineer} -- ISTQB (Apr 2024).
+\item \textbf{WebServices / REST API Testing with SoapUI + Real Time Projects} -- Udemy (Apr 2024).
+\item \textbf{Advanced Testing Practices using AWS DevOps Tools} -- AWS (Dec 2024).
 \end{itemize}
 
-% ============================================================
-%     HONORS AND AWARDS (optional)
-% ============================================================
-
-\section{Honors and Awards}
-\vspace{1pt}
-\begin{itemize}
-\item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
-\end{itemize}
+\vspace{5pt}
 
 % ============================================================
 %     REFERENCES

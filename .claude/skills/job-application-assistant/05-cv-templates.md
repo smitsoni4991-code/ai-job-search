@@ -116,11 +116,11 @@ When the role sits outside your home domain, **lead with the domain-transfer arg
 **Create 2-3 profile statement templates for your main role types:**
 
 <!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+**For Quality Engineering Manager / QA Program Lead roles:**
+> Experienced Quality Engineering Manager and QA Lead with 7+ years of expertise in driving end-to-end software quality, build readiness, and CI/CD release engineering. Proven track record in reducing production defect leakage by 35% and cutting manual regression effort by 60% through automated testing and intelligent AI-powered quality tooling. Skilled in building and mentoring high-performing QA teams, establishing test automation standards, and delivering data-driven Go/No-Go release insights to executive stakeholders.
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For Senior QA Automation Engineer roles:**
+> Senior QA Automation Engineer with over 7 years of experience architecting test automation frameworks and data validation suites using Playwright, Xcode/XCTest, Python, and RestAssured. Expert in CI/CD pipeline integration, API verification, and SQL scripting, with a strong focus on eliminating release bottlenecks, accelerating testing velocity, and leveraging AI tooling to optimize workflows.
 
 Statements labeled *[Used for: <company>_<role>]* were extracted from archived application drafts by `/setup` Path A. They are **phrasing references, never fact sources**: when drafting from one, every factual claim still comes from `01-candidate-profile.md` - a past tailored draft does not vouch for its own accuracy.
 

@@ -4,8 +4,6 @@ framework_version: 1.0.0
 
 # Interview Preparation Guide
 
-<!-- SETUP: STAR examples are personalized by running /setup based on your actual experience -->
-
 ## STAR Format
 
 Structure answers as: **Situation** (context), **Task** (your responsibility), **Action** (what you did), **Result** (outcome).
@@ -14,44 +12,40 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 
 ## Ready-Made STAR Examples
 
-<!-- These are populated by /setup from your actual experience. Below are templates showing the format. -->
+### 1. AI-Powered Quality Tooling & Automation (Innovation & Efficiency)
+**S:** Spectrum (Charter Communications) faced bottlenecks in manually triaging bugs, writing test cases, and identifying gaps in coverage across complex web/iOS platforms.
+**T:** Identify opportunities to leverage AI and modern tooling to accelerate test planning, automate bug classification, and optimize QA workflows.
+**A:** Architected and implemented intelligent testing utilities using Python and LLM integrations to auto-classify bug tickets by severity/UX impact, auto-generate modular test plans directly from functional requirements, and perform automated gap analyses.
+**R:** Achieved 40% faster test creation and execution cycles, freeing up the team to focus on high-risk edge cases and complex system integrations.
+**Use for:** "Tell me about a time you used AI/innovation in QA", "How do you improve QA velocity?", "Describe a tool you built to help your team."
 
-### 1. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT - what was happening, what was the problem]
-**T:** [YOUR RESPONSIBILITY - what you specifically needed to do]
-**A:** [WHAT YOU DID - specific actions, tools, methods]
-**R:** [OUTCOME - measurable results, adoption, impact]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 2. OS Build Quality & Release Readiness (Release Stewardship & Risk Management)
+**S:** Complex integration boundaries across Spectrum’s web and iOS client platform builds occasionally resulted in critical production defect leakage.
+**T:** Establish a robust build readiness evaluation process and bug triage protocol to minimize escape rates and make secure release decisions.
+**A:** Led end-to-end evaluation of software builds, drove cross-functional triage sessions with engineering and product partners, and used structured risk assessments to guide Go/No-Go release timing.
+**R:** Achieved a 35% reduction in production defect escape, significantly improving build stability and user satisfaction for platforms serving millions.
+**Use for:** "How do you handle Go/No-Go release decisions?", "Tell me about a critical bug you triaged under pressure", "How do you assess bug severity?"
 
-### 2. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
-
-### 3. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
-
-<!-- Add more STAR examples as needed. Aim for 4-6 covering different competencies. -->
+### 3. UAT Platform Migration & Go-Live Readiness (Stakeholder Coordination & Data Integrity)
+**S:** The State of Oregon was migrating complex healthcare claims workflows under tight regulatory deadlines with multiple internal teams, the Oregon Health Authority, and external implementation partners.
+**T:** Lead UAT, align cross-organizational deliverables, and ensure system stability and compliance prior to the launch date.
+**A:** Defined clear readiness criteria, engineered SQL-based validation strategies to verify claims integrity, and served as the central point of contact to resolve dependencies, risks, and blockers.
+**R:** Identified 35+ critical bugs prior to go-live, ensuring 100% database compliance and boosting stakeholder satisfaction by 20%.
+**Use for:** "Tell me about managing stakeholder relationships", "How do you test complex system integrations?", "Describe a challenging UAT migration."
 
 ## Common Tough Questions
 
-### "Why did you leave [previous company]?"
-> [PREPARE YOUR ANSWER - be honest, forward-looking, no negativity about former employer]
+### "Why did you leave your previous company?"
+> I am looking for my next challenge to scale my impact as a Quality Engineering Manager or QA Lead. I want to bring my experience in test automation architecture, release readiness, and AI-powered quality tooling to a team where I can establish robust testing standards, mentor engineers, and drive release stability.
 
 ### "You don't have [specific skill/experience]."
-> [PREPARE YOUR ANSWER - acknowledge the gap, bridge to adjacent experience, show willingness to learn]
+> While I might not have direct experience in [specific skill], I have a strong foundation in closely related areas, such as [adjacent skill]. For example, in my work with [framework/tool], I quickly mastered [concept] and built [system]. I am highly adaptable and confident I can master [specific skill] quickly to support the team.
 
 ### "Where do you see yourself in 5 years?"
-> [PREPARE YOUR ANSWER - show ambition aligned with the role's growth path]
+> I see myself leading a high-performing Quality Engineering department, driving continuous integration and automated quality gates across multiple product lines. I plan to continue championing the integration of AI tools in testing workflows and establishing world-class QA standards.
 
 ### "What's your biggest weakness?"
-> [PREPARE YOUR ANSWER - genuine weakness with concrete mitigation strategy]
+> Sometimes I can be overly protective of release quality, which can create tension when development timelines are compressed. I've mitigated this by implementing collaborative bug triage processes early in the release cycle, ensuring both development and product teams are fully aligned on quality trade-offs and risk assessments beforehand.
 
 ### "Why this company specifically?"
 > Customize per company. Must reference: specific projects, company values, market position, or team structure. Never give a generic answer.

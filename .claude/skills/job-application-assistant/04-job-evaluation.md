@@ -4,20 +4,16 @@ framework_version: 1.2.2
 
 # Job Evaluation Framework
 
-<!-- SETUP: Skill match areas and career goals are personalized by running /setup -->
-
 ## Eligibility Gate — run before scoring
 
-If the candidate is not a citizen or permanent resident of the country they are applying in, run this first. It is a hard filter, not a scoring dimension, and it is separate from work-permit *timing*: timing asks "can they work the required hours yet?", eligibility asks "are they permitted to hold this job at all?". A candidate can pass timing and still be categorically excluded.
-
-Read the posting's eligibility / work rights / "who can apply" section **verbatim** and classify:
+The candidate is currently on an H-1B visa and requires H-1B visa transfer/sponsorship to work in the United States. If the candidate is not a citizen or permanent resident, run this first. Read the posting's eligibility / work rights / sponsorship section **verbatim** and classify:
 
 | Posting wording | Verdict |
 |-----------------|---------|
-| Names a **citizenship or permanent-residency requirement** ("must be a citizen of X", "permanent resident", "PR required", "full working rights" where the employer means citizen/PR) | **FAIL — hard stop.** Do not score, do not draft. Quote the exact wording back to the user. |
-| Requires a **security clearance** at any level | **FAIL** in most countries, since clearance is normally gated on citizenship. Verify the specific scheme rather than assuming. |
-| **Explicitly names** the candidate's permit class, or says "international applicants welcome", "visa holders considered", "we sponsor" | **PASS** — verified acceptance. Worth noting as a positive in the application. |
-| **Silent** on citizenship or residency | **PROCEED, but mark unverified.** Check the employer's own careers or international-applicant page before drafting. |
+| Names a **citizenship or permanent-residency requirement** ("must be a US citizen", "Green Card required", "security clearance required" where clearance is gated on citizenship) | **FAIL — hard stop.** Do not score, do not draft. Quote the exact wording back to the user. |
+| Explicitly states **no visa sponsorship or transfer** ("no H-1B transfer", "must not require sponsorship now or in the future", "no sponsorship provided") | **FAIL — hard stop.** Do not score, do not draft. Quote the exact wording back to the user. |
+| **Explicitly offers visa sponsorship or H1-B transfers** ("H-1B transfer accepted", "we sponsor", "sponsorship available", "visa sponsorship considered") | **PASS** — verified acceptance. Worth noting as a positive in the application. |
+| **Silent** on citizenship, residency, or visa sponsorship | **PROCEED, but mark unverified.** Check the employer's own careers or international-applicant page/portal before drafting. |
 
 **Two rules that are easy to get wrong:**
 
@@ -60,9 +56,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** Test automation (Playwright, Xcode/XCTest), Python scripting, REST API testing (SoapUI, Postman, RestAssured), SQL database validation, bug triage, build readiness assessment.
+**Moderate match areas:** Swift automation, JMeter, CI/CD integration (GitHub Actions, Jenkins), Docker, AWS DevOps tools, Scrum/Agile methodology.
+**Weak match areas:** Front-end development, non-technical project management, raw machine learning model engineering.
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for?
@@ -74,9 +70,9 @@ Does work history align with what they're looking for?
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** Quality Engineering Manager, QA Lead, QA Program Lead, Release Quality, Build Quality, UAT coordination.
+**Moderate:** Senior QA Automation Engineer, QA Analyst.
+**Entry-level:** Data Science/ML engineering, kernel development.
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -91,9 +87,10 @@ Does the role and company culture match the behavioral profile?
 **Red flags to research:** Department disorganization, work dominated by maintenance over development, poor chemistry with leadership, culture mismatches. Check reviews, media coverage, LinkedIn connections, and network contacts for insider perspective.
 
 ### 4. Location & Logistics (Pass/Fail + Notes)
-- Within commute range: PASS
+- Within St. Louis commute range: PASS
 - Remote with occasional office: PASS
-- Requires relocation: FAIL (deal-breaker)
+- Within preferred relocation cities (New York, New Jersey, San Francisco, San Diego, Austin, Texas): PASS
+- Requires relocation outside preferred areas: FAIL / FLAG (discuss with user)
 - Frequent international travel: FLAG (discuss with user)
 
 ### 5. Career Alignment & Motivation (0-100)
@@ -107,19 +104,19 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Secure a Quality Engineering Manager or QA Lead role where they can establish automation standards and drive release quality.
+- Scale team capabilities by mentoring QA engineers and introducing modern tooling (including AI-powered testing and triage tools).
+- Actively participate in release decision-making and build readiness coordination with cross-functional development and product teams.
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
+- Tasks that energize: Architecting test automation suites, leading bug triage and severity analysis, mentoring engineers, building AI-powered QA workflow tools.
+- Tasks that drain: Non-technical manual repetitive regressions, administrative tasks without quality improvement focus, purely siloed work without developer interaction.
 - Non-task factors: leadership style, department culture, company values, degree of autonomy
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: Focus on senior / lead / managerial compensation in established tech or enterprise sectors.
+- **Flexibility**: Hybrid or Remote working preferences; open to relocation to New York, New Jersey, San Francisco, San Diego, or Austin (Texas). Currently on H-1B visa, requires H-1B transfer/sponsorship. Notice period is 2 weeks before joining.
+- **Professional development**: Opportunities to expand leadership footprint, CI/CD strategies, and AI tooling.
 
 ### 6. Salary Benchmark (Optional)
 
@@ -169,7 +166,7 @@ Present the evaluation as:
 - [bullet points]
 
 ### Recommendation
-[1-2 sentences: apply/skip/apply with caveats]
+- [1-2 sentences: apply/skip/apply with caveats]
 
 ### Company Research Checklist
 - [ ] Checked company website (mission, values, recent news)
